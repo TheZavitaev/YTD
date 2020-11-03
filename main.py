@@ -43,7 +43,7 @@ def download(choice, url):
             file_name = v.title
             audio_file = f'{file_name}.{audio_extension}'
             base = os.path.splitext(audio_file)[0]
-            # TODO: на винде не аотает конвертация таким образом.
+            # TODO: на винде не работает конвертация таким образом.
             os.rename(audio_file, base + '.mp3')
 
         return d
